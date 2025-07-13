@@ -1,15 +1,15 @@
 import { useState } from 'react'
 import { Routes, Route, Link, useNavigate } from 'react-router-dom'
-import reactLogo from './assets/react.svg'
+import reactLogo from '../assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+import '../css/App.css'
 
-import Test from './components/Test'               // Default import for the Test component
-import { TestWithProps } from './components/Test' // Named import for the component with props
-import Card_T from './components/Card_T'
-import Example from './pages/Example'
-import Login from './pages/Login'
-import Signup from './pages/Signup'
+import Test from '../components/Test'               // Default import for the Test component
+import { TestWithProps } from '../components/Test' // Named import for the component with props
+import Card_T from '../components/Card_T'
+import Example from './Example'
+import Login from './Login/Login'
+import Signup from './Login/Signup'
 
 function Home() {
   const [count, setCount] = useState(0)
