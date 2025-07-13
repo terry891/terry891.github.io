@@ -8,6 +8,8 @@ import Test from './components/Test'               // Default import for the Tes
 import { TestWithProps } from './components/Test' // Named import for the component with props
 import Card_T from './components/Card_T'
 import Example from './pages/Example'
+import Login from './pages/Login'
+import Signup from './pages/Signup'
 
 function Home() {
   const [count, setCount] = useState(0)
@@ -22,6 +24,12 @@ function Home() {
       <nav style={{ padding: '1rem', marginBottom: '2rem' }}>
         <Link to="/example" style={{ marginRight: '1rem', color: '#646cff', textDecoration: 'none' }}>
           Go to Example Page
+        </Link>
+        <Link to="/login" style={{ marginRight: '1rem', color: '#646cff', textDecoration: 'none' }}>
+          Login
+        </Link>
+        <Link to="/signup" style={{ marginRight: '1rem', color: '#646cff', textDecoration: 'none' }}>
+          Sign Up
         </Link>
       </nav>
       
@@ -50,6 +58,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/example" element={<Example />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
     </Routes>
   )
 }
